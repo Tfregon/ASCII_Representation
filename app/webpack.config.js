@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './frontend/src/index.js',  // Arquivo principal JS
+    entry: './index.js',  // Arquivo principal JS
     output: {
         filename: 'bundle.js',  // Nome do arquivo final JS
         path: path.resolve(__dirname, 'dist'),  // Pasta de saída
@@ -45,7 +45,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './frontend/src/index.html', // Gera automaticamente HTML
+            template: './index.html', // Gera automaticamente HTML
             filename: 'index.html'
         }),
         new MiniCssExtractPlugin({

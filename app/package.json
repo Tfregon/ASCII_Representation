@@ -17,9 +17,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
-  "scripts": {
-    "start": "localhost:3000"
-  },
+"scripts": {
+  "start": "webpack serve --mode development",
+  "build": "webpack --mode production"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
